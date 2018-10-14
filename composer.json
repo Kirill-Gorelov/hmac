@@ -1,0 +1,13 @@
+{
+    "name": "hmac/hmac",
+    "description": "request encryption and signature",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "gorelov",
+            "email": "gorelov@ener.ru"
+        }
+    ],
+    "require": {}
+}
