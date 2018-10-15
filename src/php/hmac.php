@@ -10,6 +10,7 @@ class Hmac{
 		$this->algo = $algo;
 	}
 
+	//создание подписи
 	function make_data_hmac($data, $key){
 		Hmac::ksort_recursive($data);
 		
@@ -17,6 +18,7 @@ class Hmac{
 		return $this->make_signature($data_enc, $key);
 	}
 	
+	//проверки подписи
 	function check_data_hmac($data, $key, $sign_param_name){		
         Hmac::ksort_recursive($data);
 		$orig_hmap = $this->make_data_hmac($data, $key);
