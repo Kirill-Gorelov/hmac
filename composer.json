@@ -5,14 +5,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "gorelov",
-            "email": "gorelov@ener.ru"
+            "name": "gorelov"
         }
     ],
     "require": {},
-    "extra": {
-		"branch-alias": {
-			"dev-master": "1.0.1-dev"
-		}
-	}
+    "autoload": {
+        "classmap": [
+            "src/php/hmac.php"
+        ]
+    }
 }
